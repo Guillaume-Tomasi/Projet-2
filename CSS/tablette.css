@@ -1,0 +1,81 @@
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  /* **************Header**************** */
+  #research {
+    width: auto;
+  }
+
+  /* ************Filters************** */
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  #filterButton_container {
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+  }
+
+  .filterButton {
+    margin: 20px 0 0 0;
+  }
+
+  /* **********Lodging************ */
+
+  #lodging {
+    flex-direction: column-reverse;
+  }
+
+  #container_popular {
+    width: auto;
+    align-items: center;
+    margin: 0 0 40px 0;
+  }
+
+  #cards_popular {
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+  }
+
+  #cards_popular img {
+    width: 200px;
+    max-width: 200px;
+  }
+
+  #container_lodging {
+    width: auto;
+    align-items: center;
+  }
+
+  #cards_lodging {
+    justify-content: space-around;
+  }
+
+  /******************* Activity *********************/
+
+  #activity h1 {
+    text-align: center;
+  }
+
+  #card_box {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .card_container_1,
+  .card_container_2 {
+    margin: 0 0 3% 0;
+  }
+
+  #card_box .card {
+    margin-bottom: 5%;
+  }
+  /* **********footer********** */
+  #footer {
+    width: 100%;
+    padding-right: 50px;
+  }
+}

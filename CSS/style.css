@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --grey: #f2f2f2;
+  --blue: #0065fc;
+  --bluelight: #deebff;
+}
+
+html {
+  margin: auto;
+  min-width: 350px;
+  max-width: 1440px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100%;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-weight: 400;
+}
+
+header,
+#form,
+.filters,
+.info,
+main {
+  margin: 0 3%;
+}
+body h1 {
+  font-size: 21px;
+  font-weight: 800;
+}
+
+body h3 {
+  font-weight: 800;
+}
+
+header,
+main {
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+}
+
+input,
+button {
+  border: none;
+}
+
+.bluestars {
+  color: var(--blue);
+}
+.grey {
+  color: var(--grey);
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.fa-star {
+  font-size: 12px;
+}
+
+/******************* Header *******************/
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo img {
+  width: 90px;
+  margin-top: 51px;
+  cursor: pointer;
+}
+
+#nav_bar ul {
+  display: flex;
+  justify-content: space-around;
+}
+.lodg {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  text-align: center;
+  align-items: center;
+  padding: 52px 20px 0 20px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.acti {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  text-align: center;
+  align-items: center;
+  padding: 52px 20px 0 20px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.lodg:hover,
+.acti:hover {
+  border-top: 2px solid var(--blue);
+  font-weight: 600;
+}
+.lodg a:hover,
+.acti a:hover {
+  color: var(--blue);
+}
+
+/************ Research ****************/
+
+#research {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/**************Form*******************/
+
+form {
+  border: 1px solid var(--grey);
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 420px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label {
+  background: var(--grey);
+  display: flex;
+  height: 100%;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-map-marker-alt {
+  font-size: 18px;
+}
+
+input {
+  display: flex;
+  height: 100%;
+  display: flex;
+  color: black;
+  font-weight: 800;
+  font-size: 18px;
+  padding-left: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+::placeholder {
+  color: black;
+  font-weight: 800;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchButton_text,
+#searchButton_icon {
+  display: flex;
+  color: white;
+  background: var(--blue);
+  font-size: 18px;
+  font-weight: 600;
+  height: 100%;
+  width: 135px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  cursor: pointer;
+}
+#searchButton_icon {
+  display: none;
+}
+
+/********************** Filters **********************/
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.filters h3 {
+  margin-top: 2%;
+}
+
+#filterButton_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filterButton {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 50px;
+  padding-right: 15px;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 2%;
+  margin-left: 25px;
+  border: 2px solid var(--grey);
+  transition: 0.3s;
+}
+
+.filterButton:hover {
+  background: var(--bluelight);
+  cursor: pointer;
+}
+
+.filterButton i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -4px;
+  margin-right: 9px;
+  color: var(--blue);
+  background: var(--bluelight);
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  font-size: 18px;
+}
+
+.info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 300;
+}
+
+.info i {
+  box-shadow: 0 0 2px gray;
+  display: flex;
+  color: var(--blue);
+  font-size: 14px;
+  height: 25px;
+  width: 25px;
+  min-width: 25px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 300px;
+  margin-right: 15px;
+}
+/************************** Lodging section ************************************/
+#lodging {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.lodging_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 30px 0 15px 0;
+}
+/*********************** Lodging container **********************/
+#container_lodging,
+#container_popular {
+  background: var(--grey);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 3%;
+  width: 66%;
+  border-radius: 25px;
+}
+
+#cards_lodging {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#cards_lodging .card,
+#container_popular .card {
+  border: 5px solid white;
+  background: white;
+  align-items: center;
+  width: 245px;
+  height: 200px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 15px -10px;
+  transition: 0.3s;
+}
+
+#cards_lodging a:hover,
+#cards_popular a:hover {
+  color: var(--blue);
+}
+
+#cards_lodging .card img {
+  height: 115px;
+  width: 320px;
+  object-fit: cover;
+  object-position: 50% 55%;
+}
+#cards_lodging .card_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2% 5%;
+  height: 70px;
+}
+.card_body h4 {
+  font-weight: 800;
+  font-size: 16px;
+}
+.card_body p {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.bluestars {
+  display: flex;
+  flex-wrap: nowrap;
+  position: static;
+}
+strong {
+  font-weight: 700;
+}
+
+#more {
+  font-size: 18px;
+  width: 115px;
+  font-weight: 800;
+  cursor: pointer;
+  margin: 15px 0 35px 0;
+}
+
+/************ Popular container ************************/
+
+#container_popular {
+  flex-direction: column;
+  width: 33%;
+  margin-left: 3%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.fa-chart-line {
+  font-size: 22px;
+}
+
+#container_popular .card {
+  display: flex;
+  height: 145px;
+  width: 100%;
+}
+#container_popular .card_body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: auto;
+  height: 120px;
+  padding-left: 5%;
+}
+#container_popular img {
+  object-fit: cover;
+  flex-wrap: wrap;
+  width: 135px;
+  min-width: 135px;
+  height: 145px;
+}
+
+#container_popular a {
+  display: flex;
+  align-items: center;
+}
+
+#container_popular p {
+  flex: 1;
+}
+
+/****************** Activity container ********************************/
+
+#container_activity {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#container_activity h1 {
+  padding-top: 40px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#card_box {
+  display: flex;
+  width: 100%;
+}
+
+.card_container_1,
+.card_container_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  max-width: 300px;
+  margin: 0 4%;
+}
+.card_container_2 {
+  margin-right: 0;
+}
+#container_activity .card_body {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 55px;
+  width: 100%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+#container_activity .card {
+  box-shadow: 0 0 15px -10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+#container_activity a:hover {
+  color: var(--blue);
+}
+
+#container_activity .card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card_port,
+.card_calanques {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+}
+
+.card_port img,
+.card_calanques img {
+  height: 390px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card_pomegues img {
+  height: 180px;
+  width: 300px;
+}
+
+.card_frioul img {
+  height: 110px;
+}
+
+.card_ndg img {
+  height: 140px;
+}
+
+.card_parc img {
+  height: 155px;
+}
+
+#container_activity h4 {
+  font-weight: 700;
+}
+/************************* Footer *********************************/
+footer {
+  display: flex;
+  background: var(--grey);
+  margin-top: 3%;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 3% 50px;
+}
+
+#footer h2 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#about,
+#lodg,
+#support {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer ul {
+  padding-top: 3%;
+}
+#footer li {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+}
